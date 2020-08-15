@@ -9,9 +9,9 @@ import poster from '../../assets/images/poster.png'
 const LandingPage = () => {
     return (
         <div>
+            <img src={poster} alt="poster" className="poster" />
+            <div className="poster-overlay">The Journey of Art</div>
             <Container fluid>
-                <img src={poster} alt="poster" className="poster" />
-                <div className="poster-overlay">The Journey of Art</div>
                 <Row>
                     <Col sm={12} md={{ span: 5, offset: 1 }}  >
                         <RecentPosts />
@@ -20,6 +20,14 @@ const LandingPage = () => {
                         <Subscribe />
                     </Col>
                 </Row>
+                {/* <Row>
+                    <Col sm={12}>
+                        <RecentPosts />
+                    </Col>
+                    <Col sm={12}>
+                        <Subscribe />
+                    </Col>
+                </Row> */}
             </Container>
         </div>
     )
